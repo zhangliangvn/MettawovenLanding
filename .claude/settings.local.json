@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(copy \"e:\\WORKING\\VS code APP\\mettawoven\\MettawovenLanding.jsx\" \"e:\\WORKING\\VS code APP\\mettawoven\\src\\MettawovenLanding.jsx\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
