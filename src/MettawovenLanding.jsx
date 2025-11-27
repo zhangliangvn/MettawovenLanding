@@ -81,9 +81,9 @@ const MettawovenLanding = () => {
                 </div>
                 <div className="relative group">
                     <div className="absolute -inset-1 bg-gradient-to-r from-amber-600 to-amber-900 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                    <img 
-                        src="https://images.unsplash.com/photo-1531956658058-f99a7a976c0f?auto=format&fit=crop&q=80&w=1976" 
-                        alt="Weaving Connection" 
+                    <img
+                        src="/story-1.webp"
+                        alt="Weaving Connection"
                         className="relative rounded-lg shadow-2xl opacity-90 hover:opacity-100 transition duration-700 w-full"
                     />
                     <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-stone-800 rounded-full flex items-center justify-center border-4 border-stone-700 shadow-xl z-10">
@@ -94,9 +94,9 @@ const MettawovenLanding = () => {
 
             <div className="grid md:grid-cols-2 gap-16 items-center">
                  <div className="order-2 md:order-1 relative">
-                    <img 
-                        src="https://images.unsplash.com/photo-1522771753035-1a5b6562f3ba?q=80&w=2670&auto=format&fit=crop" 
-                        alt="Artisan Quality" 
+                    <img
+                        src="/story-2.webp"
+                        alt="Artisan Quality"
                         className="rounded-lg shadow-2xl opacity-90 hover:opacity-100 transition duration-700 w-full"
                     />
                 </div>
@@ -135,7 +135,7 @@ const MettawovenLanding = () => {
         <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2">
              {/* Updated Designing Image */}
-             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop" alt="Designing" className="rounded-xl shadow-lg w-full" />
+             <img src="/process-design.webp" alt="Design & Color Mapping" className="rounded-xl shadow-lg w-full" />
           </div>
           <div className="md:w-1/2 space-y-4">
             <div className="text-amber-700 font-bold text-6xl opacity-20 font-serif">01</div>
@@ -149,7 +149,7 @@ const MettawovenLanding = () => {
         {/* Step 2 */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-10">
           <div className="md:w-1/2">
-             <img src="https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=2072&auto=format&fit=crop" alt="Loom Weaving" className="rounded-xl shadow-lg w-full" />
+             <img src="/process-weaving.webp" alt="Jacquard Weaving" className="rounded-xl shadow-lg w-full" />
           </div>
           <div className="md:w-1/2 space-y-4">
             <div className="text-amber-700 font-bold text-6xl opacity-20 font-serif">02</div>
@@ -163,7 +163,7 @@ const MettawovenLanding = () => {
         {/* Step 3 */}
         <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2">
-             <img src="https://images.unsplash.com/photo-1605218427368-35b8686d1329?q=80&w=2070&auto=format&fit=crop" alt="Hand Finishing" className="rounded-xl shadow-lg w-full" />
+             <img src="/process-finishing.webp" alt="Hand Finishing" className="rounded-xl shadow-lg w-full" />
           </div>
           <div className="md:w-1/2 space-y-4">
             <div className="text-amber-700 font-bold text-6xl opacity-20 font-serif">03</div>
