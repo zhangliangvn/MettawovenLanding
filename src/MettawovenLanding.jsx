@@ -386,7 +386,7 @@ const MettawovenLanding = () => {
         <div className="flex flex-col lg:flex-row gap-12 items-center mb-24">
           <div className="lg:w-1/2 relative group overflow-hidden rounded-xl shadow-xl">
              <div className="aspect-[4/3] bg-stone-200">
-               <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&q=80&w=2000" alt="Blanket Stack" className="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+               <img src="/product-photo-throw.webp" alt="Custom Photo Throw" className="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
              </div>
           </div>
           <div className="lg:w-1/2 lg:pl-10">
@@ -405,7 +405,7 @@ const MettawovenLanding = () => {
         <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
           <div className="lg:w-1/2 relative group overflow-hidden rounded-xl shadow-xl">
              <div className="aspect-[4/3] bg-stone-200">
-               <img src="https://images.unsplash.com/photo-1606296684615-585d68165b4f?auto=format&fit=crop&q=80&w=2000" alt="Texture" className="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+               <img src="/product-love-letter.webp" alt="Love Letter Blanket" className="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
              </div>
           </div>
           <div className="lg:w-1/2 lg:pr-10">
