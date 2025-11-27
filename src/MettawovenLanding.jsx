@@ -7,7 +7,7 @@ import { ShoppingBag, Menu, X, Star, Heart, Truck, ShieldCheck, ArrowRight, Inst
    2. Views: Ứng dụng quản lý chuyển trang bằng biến state 'currentView'.
 */
 
-const AMAZON_STORE_URL = "https://www.amazon.com/s?me=AZNWZALXIIIK6&marketplaceID=ATVPDKIKX0DER"; 
+const AMAZON_STORE_URL = "https://www.amazon.com/shops/mettawoven"; 
 
 // Custom Icons
 const PinterestIcon = ({ size = 20, className }) => (
