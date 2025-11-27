@@ -560,8 +560,8 @@ const MettawovenLanding = () => {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <button onClick={() => navigateTo('home')} className="text-2xl font-serif font-bold tracking-tight z-50 text-stone-900 cursor-pointer">
-              Mettawoven.
+            <button onClick={() => navigateTo('home')} className="z-50 cursor-pointer">
+              <img src="/logo.jpg" alt="Mettawoven" className="h-10 w-auto" />
             </button>
 
             <div className="hidden md:flex space-x-10 text-sm font-medium tracking-wide text-stone-600">
@@ -615,7 +615,7 @@ const MettawovenLanding = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           
           <div>
-            <h3 className="text-white font-serif text-2xl mb-6">Mettawoven.</h3>
+            <img src="/logo.jpg" alt="Mettawoven" className="h-12 w-auto mb-6" />
             <p className="mb-6 leading-relaxed">
               Weaving your memories into warmth. A premium brand by <strong>Mettagram</strong>.
             </p>
