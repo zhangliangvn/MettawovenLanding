@@ -615,7 +615,7 @@ const MettawovenLanding = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           
           <div>
-            <img src="/logo.png" alt="Mettawoven" className="h-12 w-auto mb-6" />
+            <img src="/logo.png" alt="Mettawoven" className="h-8 w-auto object-contain mb-6" />
             <p className="mb-6 leading-relaxed">
               Weaving your memories into warmth. A premium brand by <strong>Mettagram</strong>.
             </p>
