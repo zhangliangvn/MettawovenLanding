@@ -499,26 +499,6 @@ const MettawovenLanding = () => {
         </div>
       </section>
 
-      {/* NEW: Lifestyle Gallery - UPDATED LINKS */}
-      <section className="py-20">
-          <div className="max-w-7xl mx-auto px-6">
-              <h2 className="font-serif text-2xl text-center mb-8">Spotted in Homes</h2>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
-                  {[
-                      "https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=600&auto=format&fit=crop", // Cozy Interior 1
-                      "https://images.unsplash.com/photo-1580587771525-78b9dba3b91d?q=80&w=600&auto=format&fit=crop", // Cozy Interior 2
-                      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600&auto=format&fit=crop", // Cozy Interior 3
-                      "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=600&auto=format&fit=crop", // Cozy Interior 4
-                      "https://images.unsplash.com/photo-1543884852-c2889658e24c?q=80&w=600&auto=format&fit=crop"  // Cozy Interior 5
-                  ].map((src, i) => (
-                      <div key={i} className="aspect-square overflow-hidden bg-stone-100">
-                          <img src={src} className="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Gallery" />
-                      </div>
-                  ))}
-              </div>
-          </div>
-      </section>
-
       {/* FAQ */}
       <section className="py-20 bg-stone-50">
         <div className="max-w-3xl mx-auto px-6">
