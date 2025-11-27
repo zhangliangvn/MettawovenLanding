@@ -493,7 +493,7 @@ const MettawovenLanding = () => {
                     </div>
                 </div>
                 <div className="relative">
-                    <img src="https://images.unsplash.com/photo-1616428383837-97e3c92138eb?q=80&w=2000&auto=format&fit=crop" alt="Hands" className="rounded-lg shadow-2xl opacity-80 hover:opacity-100 transition duration-700" />
+                    <img src="/story-image.webp" alt="Woven Blanket" className="rounded-lg shadow-2xl opacity-80 hover:opacity-100 transition duration-700" />
                 </div>
             </div>
         </div>
