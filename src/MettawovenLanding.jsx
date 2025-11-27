@@ -533,9 +533,9 @@ const MettawovenLanding = () => {
       `}</style>
 
       {/* --- NAVIGATION --- */}
-      <nav 
-        className={`fixed w-full z-50 transition-all duration-300 ${
-          isScrolled && currentView === 'home' ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-white py-4 shadow-sm'
+      <nav
+        className={`fixed w-full z-50 bg-white py-4 transition-shadow duration-300 ${
+          isScrolled ? 'shadow-md' : 'shadow-sm'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
