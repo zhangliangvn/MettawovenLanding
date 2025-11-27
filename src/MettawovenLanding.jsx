@@ -57,7 +57,7 @@ const MettawovenLanding = () => {
   // --- SUB-COMPONENTS FOR PAGES ---
 
   const StoryPage = () => (
-    <div className="pt-24 pb-20 animate-in fade-in duration-500 bg-stone-900 text-stone-300 min-h-screen">
+    <div className="pt-24 pb-20 bg-stone-900 text-stone-300 min-h-screen">
        <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-16">
                 <Heart className="mx-auto text-amber-700 mb-6" size={48} />
@@ -124,7 +124,7 @@ const MettawovenLanding = () => {
   );
 
   const ProcessPage = () => (
-    <div className="pt-24 pb-20 animate-in fade-in duration-500">
+    <div className="pt-24 pb-20">
       <div className="max-w-4xl mx-auto px-6 text-center mb-16">
         <h1 className="font-serif text-4xl md:text-5xl mb-6">The Art of Woven Memories</h1>
         <p className="text-lg text-stone-600">From digital pixels to tangible threads, discover how we craft your heirloom.</p>
@@ -184,7 +184,7 @@ const MettawovenLanding = () => {
   );
 
   const ContactPage = () => (
-    <div className="pt-24 pb-20 animate-in fade-in duration-500">
+    <div className="pt-24 pb-20">
       <div className="max-w-3xl mx-auto px-6">
         <h1 className="font-serif text-4xl text-center mb-12">Get in Touch</h1>
         
@@ -229,7 +229,7 @@ const MettawovenLanding = () => {
   );
 
   const ShippingPage = () => (
-    <div className="pt-24 pb-20 animate-in fade-in duration-500">
+    <div className="pt-24 pb-20">
       <div className="max-w-3xl mx-auto px-6">
         <h1 className="font-serif text-3xl md:text-4xl mb-8">Shipping Policy</h1>
         <div className="prose prose-stone max-w-none space-y-6 text-stone-700 leading-relaxed">
@@ -258,7 +258,7 @@ const MettawovenLanding = () => {
   );
 
   const ReturnPage = () => (
-    <div className="pt-24 pb-20 animate-in fade-in duration-500">
+    <div className="pt-24 pb-20">
       <div className="max-w-3xl mx-auto px-6">
         <h1 className="font-serif text-3xl md:text-4xl mb-8">Return & Refund Policy</h1>
         <div className="prose prose-stone max-w-none space-y-6 text-stone-700 leading-relaxed">
