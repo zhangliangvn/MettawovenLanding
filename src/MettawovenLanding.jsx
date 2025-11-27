@@ -296,7 +296,7 @@ const MettawovenLanding = () => {
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto text-white">
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto text-white animate-in slide-in-from-bottom-8 duration-700">
           <p className="text-sm md:text-base uppercase tracking-[0.2em] mb-4 opacity-90">Heirloom Quality &middot; Made in USA</p>
           <h1 className="font-serif text-5xl md:text-7xl font-medium leading-tight mb-8">
             Weave Your Memories<br/>
@@ -309,7 +309,7 @@ const MettawovenLanding = () => {
             <a href={AMAZON_STORE_URL} target="_blank" rel="noopener noreferrer" className="bg-white text-stone-900 px-8 py-4 rounded-full text-lg font-medium hover:bg-stone-100 transition shadow-lg flex items-center justify-center gap-2">
               <ShoppingBag size={20}/> Shop on Amazon
             </a>
-            <button onClick={() => navigateTo('process')} className="bg-transparent border border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white/10 transition">
+            <button onClick={() => navigateTo('process')} className="bg-transparent border border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white/10 transition backdrop-blur-sm">
               See The Process
             </button>
           </div>
