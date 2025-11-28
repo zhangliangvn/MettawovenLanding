@@ -13,7 +13,8 @@
       "Bash(magick:*)",
       "Bash(npm install:*)",
       "Bash(node resize-images.js:*)",
-      "Bash(node resize-images.cjs)"
+      "Bash(node resize-images.cjs)",
+      "Bash(node -e:*)"
     ],
     "deny": [],
     "ask": []
