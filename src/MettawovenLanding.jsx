@@ -565,8 +565,77 @@ const MettawovenLanding = () => {
         </div>
       </section>
 
+      {/* How It Works - Ordering Process */}
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl text-stone-900 mb-4">How It Works</h2>
+            <p className="text-stone-500 max-w-2xl mx-auto">From your photo to a woven masterpiece in 4 simple steps</p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8 relative">
+            {/* Connection Line - Desktop */}
+            <div className="hidden md:block absolute top-16 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-amber-200 via-amber-400 to-amber-200"></div>
+
+            {/* Step 1 */}
+            <div className="relative text-center group">
+              <div className="relative z-10 w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">1</div>
+                <svg className="w-14 h-14 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-xl font-bold text-stone-900 mb-2">Upload Your Photo</h3>
+              <p className="text-stone-500 text-sm leading-relaxed">Select your size on Amazon and upload your favorite photo or text design</p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="relative text-center group">
+              <div className="relative z-10 w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">2</div>
+                <svg className="w-14 h-14 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-xl font-bold text-stone-900 mb-2">We Create Your Mockup</h3>
+              <p className="text-stone-500 text-sm leading-relaxed">Our artists in Da Nang carefully recreate your design and send you a preview</p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="relative text-center group">
+              <div className="relative z-10 w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">3</div>
+                <svg className="w-14 h-14 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-xl font-bold text-stone-900 mb-2">Review & Approve</h3>
+              <p className="text-stone-500 text-sm leading-relaxed">Love it? We start weaving! Want changes? We'll revise until you're 100% happy</p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="relative text-center group">
+              <div className="relative z-10 w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">4</div>
+                <svg className="w-14 h-14 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </div>
+              <h3 className="font-serif text-xl font-bold text-stone-900 mb-2">Woven & Delivered</h3>
+              <p className="text-stone-500 text-sm leading-relaxed">Your blanket is woven in the USA and shipped to your door in 5-9 business days</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <a href={AMAZON_STORE_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-stone-900 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-stone-700 transition shadow-lg">
+              <ShoppingBag size={20}/> Start Your Order
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Products */}
-      <section id="collection" className="py-24 max-w-7xl mx-auto px-6 lg:px-8">
+      <section id="collection" className="py-24 max-w-7xl mx-auto px-6 lg:px-8 bg-stone-50">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl text-stone-900 mb-4">The Collection</h2>
           <p className="text-stone-500 max-w-2xl mx-auto">Discover our best-selling woven masterpieces.</p>
