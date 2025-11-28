@@ -369,15 +369,123 @@ const MettawovenLanding = () => {
 
   const AboutUsPage = () => (
     <div className="pt-24 pb-20">
-      <div className="max-w-4xl mx-auto px-6">
-        <h1 className="font-serif text-3xl md:text-4xl mb-8 text-center">About Our Products</h1>
-
-        {/* Product Overview */}
-        <div className="prose prose-stone max-w-none space-y-6 text-stone-700 leading-relaxed mb-16">
-          <p className="text-lg">
-            Whether you choose to feature a photo or a piece of graphic art, our cozy blankets elevate images into lasting, quality heirlooms. Display them on your wall or use them to cuddle up on the couch. These throw-sized woven blankets are crafted from <strong>100% cotton yarn</strong> with a colorful edge fringe that extends the image.
+      {/* Hero Section */}
+      <div className="bg-gradient-to-b from-stone-900 to-stone-800 text-white py-20 mb-16">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <p className="text-amber-500 uppercase tracking-widest text-sm mb-4">A Mettagram LLC Brand</p>
+          <h1 className="font-serif text-4xl md:text-5xl mb-6">About Mettawoven</h1>
+          <p className="text-stone-300 text-lg max-w-2xl mx-auto leading-relaxed">
+            Where artisan craftsmanship meets modern personalization. We transform your cherished memories into heirloom-quality woven treasures.
           </p>
         </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-6">
+        {/* Company Story */}
+        <div className="mb-20">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="font-serif text-3xl text-stone-900 mb-6">Our Story</h2>
+              <div className="space-y-4 text-stone-600 leading-relaxed">
+                <p>
+                  <strong className="text-stone-900">Mettawoven</strong> is a proud brand under <strong className="text-stone-900">Mettagram LLC</strong>, a U.S.-based company headquartered in Montana. We specialize in premium handcrafted textile products that celebrate the art of traditional craftsmanship.
+                </p>
+                <p>
+                  The name "Metta" comes from the Pali word for <em>loving-kindness</em>—a sincere wish for the happiness and well-being of others. This philosophy guides everything we create: products made with intention, care, and love.
+                </p>
+                <p>
+                  Our mission is simple: to help you preserve your most precious moments in a form that can be touched, felt, and passed down through generations.
+                </p>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-amber-50 to-stone-100 rounded-2xl p-8 text-center">
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Heart className="w-10 h-10 text-amber-600" />
+              </div>
+              <blockquote className="font-serif text-xl text-stone-700 italic">
+                "We don't just make blankets. We weave the warmth of a hug that lasts forever."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        {/* Mettagram Family */}
+        <div className="mb-20">
+          <h2 className="font-serif text-3xl text-stone-900 mb-4 text-center">The Mettagram Family</h2>
+          <p className="text-stone-500 text-center mb-10 max-w-2xl mx-auto">Our parent company specializes in artisan handcrafted products across multiple beloved brands</p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white border border-stone-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🧶</span>
+              </div>
+              <h3 className="font-bold text-stone-900 mb-2">Crochet Collection</h3>
+              <p className="text-sm text-stone-500">Handcrafted crochet pieces including amigurumi, home décor, and wearable art made with premium yarns</p>
+            </div>
+            <div className="bg-white border border-stone-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🪡</span>
+              </div>
+              <h3 className="font-bold text-stone-900 mb-2">Embroidered Apparel</h3>
+              <p className="text-sm text-stone-500">Custom embroidered clothing featuring intricate designs, personalized monograms, and artistic motifs</p>
+            </div>
+            <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 bg-amber-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🏠</span>
+              </div>
+              <h3 className="font-bold text-amber-900 mb-2">Mettawoven</h3>
+              <p className="text-sm text-amber-700">Premium jacquard woven blankets that transform your photos into lasting cotton heirlooms</p>
+              <span className="inline-block mt-3 text-xs bg-amber-200 text-amber-800 px-3 py-1 rounded-full font-medium">You Are Here</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Why Choose Us */}
+        <div className="bg-stone-900 text-white rounded-2xl p-10 mb-20">
+          <h2 className="font-serif text-3xl mb-8 text-center">Why Choose Mettawoven?</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="flex gap-4">
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <MapPin size={24} />
+              </div>
+              <div>
+                <h4 className="font-bold mb-2">Made in USA</h4>
+                <p className="text-stone-400 text-sm">All blankets are woven in our Montana facility using American-made Jacquard looms</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <Star size={24} />
+              </div>
+              <div>
+                <h4 className="font-bold mb-2">Artist-Crafted Designs</h4>
+                <p className="text-stone-400 text-sm">Our Da Nang design team personally recreates each image for optimal woven results</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <ShieldCheck size={24} />
+              </div>
+              <div>
+                <h4 className="font-bold mb-2">100% Satisfaction Guarantee</h4>
+                <p className="text-stone-400 text-sm">We revise your mockup until you're completely happy before production begins</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <Heart size={24} />
+              </div>
+              <div>
+                <h4 className="font-bold mb-2">Heirloom Quality</h4>
+                <p className="text-stone-400 text-sm">100% cotton construction means your blanket gets softer with age, not worn out</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Product Info Header */}
+        <h2 className="font-serif text-3xl text-stone-900 mb-4 text-center">Product Details</h2>
+        <p className="text-stone-500 text-center mb-10">Everything you need to know about our woven blankets</p>
 
         {/* Key Features */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
