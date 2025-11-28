@@ -29,7 +29,7 @@ const TikTokIcon = ({ size = 20, className }) => (
 const MettawovenLanding = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentView, setCurrentView] = useState('home'); // home, story, process, contact, shipping, returns
+  const [currentView, setCurrentView] = useState('home'); // home, story, process, contact, shipping, returns, privacy, terms, aboutus
   const [activeFaq, setActiveFaq] = useState(null);
 
   // Scroll to top when view changes
@@ -139,9 +139,9 @@ const MettawovenLanding = () => {
           </div>
           <div className="md:w-1/2 space-y-4">
             <div className="text-amber-700 font-bold text-6xl opacity-20 font-serif">01</div>
-            <h3 className="text-2xl font-serif font-bold">Design & Color Mapping</h3>
+            <h3 className="text-2xl font-serif font-bold">Custom Design & Mockup</h3>
             <p className="text-stone-600 leading-relaxed">
-              It starts with your image. Our artists in Da Nang don't just "print" it. They use specialized software to map your photo's colors to our 6-color yarn palette. Every pixel becomes a specific combination of colored threads (Red, Blue, Gold, Green, Black, White).
+              After you upload your photo or text on Amazon, our artist team in Da Nang gets to work. They don't just "print" your image—they carefully recreate it using specialized software to map your photo's colors to our 6-color yarn palette. We'll send you a mockup for approval before production begins. Not satisfied? We'll revise until you love it!
             </p>
           </div>
         </div>
@@ -235,8 +235,11 @@ const MettawovenLanding = () => {
         <div className="prose prose-stone max-w-none space-y-6 text-stone-700 leading-relaxed">
           <p>At Mettawoven, we pride ourselves on being one of the few custom woven companies that manufactures and ships directly from the USA. This ensures faster delivery times compared to overseas competitors.</p>
           
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Mockup & Approval</h3>
+          <p>After you place your order, our artist team will create a custom mockup of your design and send it to you for approval. You can request revisions until you're completely satisfied—we want you to love your blanket!</p>
+
           <h3 className="text-xl font-bold text-stone-900 mt-8">Production Time</h3>
-          <p>Because every blanket is woven to order (not printed off a shelf), please allow <strong>2-4 business days</strong> for production. During peak holiday seasons (Christmas, Mother's Day), production may take up to 5 business days.</p>
+          <p>Once you approve your mockup, production begins. Please allow <strong>2-4 business days</strong> for weaving. During peak holiday seasons (Christmas, Mother's Day), production may take up to 5 business days.</p>
 
           <h3 className="text-xl font-bold text-stone-900 mt-8">Shipping Time</h3>
           <ul className="list-disc pl-5 space-y-2">
@@ -277,6 +280,193 @@ const MettawovenLanding = () => {
 
           <h3 className="text-xl font-bold text-stone-900 mt-8">How to Request a Return</h3>
           <p>Please contact us at <a href="mailto:support@mettawoven.com" className="text-amber-700 underline">support@mettawoven.com</a> within 30 days of receiving your order. Please include your Order ID and a photo of the issue.</p>
+        </div>
+      </div>
+    </div>
+  );
+
+  const PrivacyPolicyPage = () => (
+    <div className="pt-24 pb-20">
+      <div className="max-w-3xl mx-auto px-6">
+        <h1 className="font-serif text-3xl md:text-4xl mb-8">Privacy Policy</h1>
+        <div className="prose prose-stone max-w-none space-y-6 text-stone-700 leading-relaxed">
+          <p><strong>Last updated:</strong> January 2025</p>
+
+          <p>At Mettawoven, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or make a purchase.</p>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Information We Collect</h3>
+          <p>When you place an order through Amazon, we may receive:</p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Your name and shipping address</li>
+            <li>Order details and purchase history</li>
+            <li>Photos or images you upload for custom products</li>
+            <li>Communication records if you contact our support team</li>
+          </ul>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">How We Use Your Information</h3>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>To fulfill and ship your custom orders</li>
+            <li>To communicate with you about your order status</li>
+            <li>To provide customer support</li>
+            <li>To improve our products and services</li>
+          </ul>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Your Photos</h3>
+          <p>The photos you upload for custom blankets are used solely for production purposes. We do not share, sell, or use your personal photos for marketing without your explicit consent.</p>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Data Security</h3>
+          <p>We implement appropriate security measures to protect your personal information. All transactions are processed securely through Amazon's payment system.</p>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Third-Party Services</h3>
+          <p>Our products are sold through Amazon. When you make a purchase, you are also subject to Amazon's Privacy Policy. We recommend reviewing their policy for complete information.</p>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Contact Us</h3>
+          <p>If you have questions about this Privacy Policy, please contact us at <a href="mailto:support@mettawoven.com" className="text-amber-700 underline">support@mettawoven.com</a>.</p>
+        </div>
+      </div>
+    </div>
+  );
+
+  const TermsOfServicePage = () => (
+    <div className="pt-24 pb-20">
+      <div className="max-w-3xl mx-auto px-6">
+        <h1 className="font-serif text-3xl md:text-4xl mb-8">Terms of Service</h1>
+        <div className="prose prose-stone max-w-none space-y-6 text-stone-700 leading-relaxed">
+          <p><strong>Last updated:</strong> January 2025</p>
+
+          <p>Welcome to Mettawoven. By using our website and purchasing our products, you agree to the following terms and conditions.</p>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Products & Orders</h3>
+          <p>All Mettawoven blankets are custom-made to order. Once production begins, orders cannot be modified or canceled. Please ensure your uploaded image and order details are correct before completing your purchase.</p>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Image Requirements</h3>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>You must own the rights to any images you upload, or have permission to use them</li>
+            <li>We reserve the right to refuse any image that violates copyright, contains inappropriate content, or cannot be reproduced with acceptable quality</li>
+            <li>Low-resolution images may result in blurry weaves; we recommend high-quality photos for best results</li>
+          </ul>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Product Characteristics</h3>
+          <p>Our woven blankets are created using a 6-color yarn palette. Due to the nature of jacquard weaving:</p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Colors in the final product may vary slightly from the original image</li>
+            <li>The woven texture creates a unique artistic interpretation of your photo</li>
+            <li>This is not a defect but a characteristic of the weaving process</li>
+          </ul>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Intellectual Property</h3>
+          <p>All content on this website, including logos, text, and images (excluding customer uploads), is the property of Mettawoven and protected by copyright laws.</p>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Limitation of Liability</h3>
+          <p>Mettawoven is not liable for any indirect, incidental, or consequential damages arising from the use of our products. Our maximum liability is limited to the purchase price of the product.</p>
+
+          <h3 className="text-xl font-bold text-stone-900 mt-8">Changes to Terms</h3>
+          <p>We reserve the right to update these terms at any time. Continued use of our services constitutes acceptance of any changes.</p>
+        </div>
+      </div>
+    </div>
+  );
+
+  const AboutUsPage = () => (
+    <div className="pt-24 pb-20">
+      <div className="max-w-4xl mx-auto px-6">
+        <h1 className="font-serif text-3xl md:text-4xl mb-8 text-center">About Our Products</h1>
+
+        {/* Product Overview */}
+        <div className="prose prose-stone max-w-none space-y-6 text-stone-700 leading-relaxed mb-16">
+          <p className="text-lg">
+            Whether you choose to feature a photo or a piece of graphic art, our cozy blankets elevate images into lasting, quality heirlooms. Display them on your wall or use them to cuddle up on the couch. These throw-sized woven blankets are crafted from <strong>100% cotton yarn</strong> with a colorful edge fringe that extends the image.
+          </p>
+        </div>
+
+        {/* Key Features */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="bg-stone-50 p-6 rounded-xl text-center">
+            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-2xl">🧵</span>
+            </div>
+            <h3 className="font-bold text-stone-900 mb-2">100% Cotton</h3>
+            <p className="text-sm text-stone-600">Made from specially spun fibers that create a strong, smooth fabric perfect for detailed imagery.</p>
+          </div>
+          <div className="bg-stone-50 p-6 rounded-xl text-center">
+            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-2xl">📷</span>
+            </div>
+            <h3 className="font-bold text-stone-900 mb-2">Photo Variant</h3>
+            <p className="text-sm text-stone-600">Best for photographs and photorealistic imagery. Showcases subtle color gradations and fine details beautifully.</p>
+          </div>
+          <div className="bg-stone-50 p-6 rounded-xl text-center">
+            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-2xl">🎨</span>
+            </div>
+            <h3 className="font-bold text-stone-900 mb-2">Artwork Variant</h3>
+            <p className="text-sm text-stone-600">Best for solid, distinct color blocks. Enhances clarity and sharpness in designs with bold, separated colors.</p>
+          </div>
+        </div>
+
+        {/* Size Guide */}
+        <div className="bg-white border border-stone-200 rounded-xl p-8 mb-16">
+          <h2 className="font-serif text-2xl mb-6 text-center">Size Guide</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-center">
+              <thead>
+                <tr className="border-b border-stone-200">
+                  <th className="py-3 px-4 text-left font-bold text-stone-900">Dimension</th>
+                  <th className="py-3 px-4 font-bold text-stone-900">Small</th>
+                  <th className="py-3 px-4 font-bold text-stone-900">Medium</th>
+                  <th className="py-3 px-4 font-bold text-stone-900">Large</th>
+                </tr>
+              </thead>
+              <tbody className="text-stone-600">
+                <tr className="border-b border-stone-100">
+                  <td className="py-3 px-4 text-left font-medium">Size (inches)</td>
+                  <td className="py-3 px-4">52" × 37"</td>
+                  <td className="py-3 px-4">60" × 50"</td>
+                  <td className="py-3 px-4">80" × 60"</td>
+                </tr>
+                <tr className="border-b border-stone-100">
+                  <td className="py-3 px-4 text-left font-medium">Size (cm)</td>
+                  <td className="py-3 px-4">132 × 94</td>
+                  <td className="py-3 px-4">152 × 127</td>
+                  <td className="py-3 px-4">203 × 152</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 text-left font-medium">Tolerance</td>
+                  <td className="py-3 px-4">± 2.5"</td>
+                  <td className="py-3 px-4">± 2.5"</td>
+                  <td className="py-3 px-4">± 2.5"</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Care Instructions */}
+        <div className="bg-amber-50 border border-amber-200 rounded-xl p-8">
+          <h2 className="font-serif text-2xl mb-6 text-center">Care Instructions</h2>
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div>
+              <div className="text-3xl mb-2">🧺</div>
+              <h4 className="font-bold text-stone-900 mb-1">Machine Wash</h4>
+              <p className="text-sm text-stone-600">Cold water (max 30°C/90°F), gentle cycle, mild detergent</p>
+            </div>
+            <div>
+              <div className="text-3xl mb-2">💧</div>
+              <h4 className="font-bold text-stone-900 mb-1">Bleach</h4>
+              <p className="text-sm text-stone-600">Non-chlorine bleach only, as needed</p>
+            </div>
+            <div>
+              <div className="text-3xl mb-2">🌀</div>
+              <h4 className="font-bold text-stone-900 mb-1">Tumble Dry</h4>
+              <p className="text-sm text-stone-600">Low heat setting recommended</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <a href={AMAZON_STORE_URL} target="_blank" rel="noopener noreferrer" className="bg-stone-900 text-white px-8 py-3 rounded-full hover:bg-stone-700 transition inline-flex items-center gap-2">
+            <ShoppingBag size={18}/> Shop Now on Amazon
+          </a>
         </div>
       </div>
     </div>
@@ -505,10 +695,11 @@ const MettawovenLanding = () => {
           <h2 className="font-serif text-3xl text-center mb-12">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
-              { q: "How do I order?", a: "Simply click 'Shop on Amazon' to customize and order directly via Amazon for the best experience." },
-              { q: "Is the image printed?", a: "No! Your image is woven into the blanket using colored cotton yarns. It will never fade or crack." },
-              { q: "Can I wash the blanket?", a: "Yes. Machine wash cold, tumble dry low. They get softer with every wash." },
-              { q: "Shipping time?", a: "Production takes 2-4 days. Shipping takes 3-5 days within the US." }
+              { q: "How do I order?", a: "Select your size on Amazon, upload your photo or text, and place your order. Our artist team will create a custom mockup and send it to you for approval. Once approved, we'll start production. If you're not satisfied, we'll revise until you're happy!" },
+              { q: "Is the image printed?", a: "No! Your image is woven into the blanket using 100% cotton yarns. It's part of the fabric itself, so it will never fade, crack, or peel like printed blankets." },
+              { q: "What sizes are available?", a: "We offer three sizes: Small (52\"×37\"), Medium (60\"×50\"), and Large (80\"×60\"). All are made from 100% cotton with decorative fringe edges." },
+              { q: "Can I wash the blanket?", a: "Yes! Machine wash cold (max 30°C/90°F) on gentle cycle with mild detergent. Tumble dry on low heat. They get softer with every wash." },
+              { q: "What's the production time?", a: "After mockup approval, production takes 2-4 business days. Shipping takes 3-5 business days within the US via Amazon." }
             ].map((item, idx) => (
               <div key={idx} className="bg-white rounded-lg border border-stone-200 overflow-hidden">
                 <button onClick={() => toggleFaq(idx)} className="w-full flex justify-between items-center p-5 text-left font-medium text-stone-900 hover:bg-stone-50">
@@ -569,13 +760,18 @@ const MettawovenLanding = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="fixed inset-0 bg-white z-40 flex flex-col justify-center items-center space-y-8 text-xl font-serif text-stone-900 animate-in fade-in slide-in-from-top-10 duration-300">
+          <div className="fixed inset-0 bg-white z-40 flex flex-col justify-center items-center space-y-6 text-lg font-serif text-stone-900 animate-in fade-in slide-in-from-top-10 duration-300">
             <a href={AMAZON_STORE_URL} target="_blank" rel="noopener noreferrer">Shop on Amazon</a>
             <button onClick={() => navigateTo('process')}>The Process</button>
             <button onClick={() => navigateTo('story')}>Our Story</button>
+            <button onClick={() => navigateTo('aboutus')}>About Us</button>
             <button onClick={() => navigateTo('contact')}>Contact</button>
-            <button onClick={() => navigateTo('shipping')}>Shipping Policy</button>
-            <button onClick={() => navigateTo('returns')}>Return Policy</button>
+            <div className="border-t border-stone-200 pt-6 flex flex-col items-center space-y-4 text-base text-stone-600">
+              <button onClick={() => navigateTo('shipping')}>Shipping Policy</button>
+              <button onClick={() => navigateTo('returns')}>Return Policy</button>
+              <button onClick={() => navigateTo('privacy')}>Privacy Policy</button>
+              <button onClick={() => navigateTo('terms')}>Terms of Service</button>
+            </div>
           </div>
         )}
       </nav>
@@ -588,6 +784,9 @@ const MettawovenLanding = () => {
         {currentView === 'contact' && <ContactPage />}
         {currentView === 'shipping' && <ShippingPage />}
         {currentView === 'returns' && <ReturnPage />}
+        {currentView === 'privacy' && <PrivacyPolicyPage />}
+        {currentView === 'terms' && <TermsOfServicePage />}
+        {currentView === 'aboutus' && <AboutUsPage />}
       </main>
 
       {/* --- FOOTER --- */}
@@ -608,31 +807,42 @@ const MettawovenLanding = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-bold uppercase tracking-wider mb-6">Support</h4>
+            <h4 className="text-white font-bold uppercase tracking-wider mb-6">Shop</h4>
             <ul className="space-y-3 cursor-pointer">
               <li><a href={AMAZON_STORE_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Visit Amazon Store</a></li>
-              <li><button onClick={() => navigateTo('shipping')} className="hover:text-white transition">Shipping Policy</button></li>
-              <li><button onClick={() => navigateTo('returns')} className="hover:text-white transition">Return Policy</button></li>
+              <li><button onClick={() => navigateTo('aboutus')} className="hover:text-white transition">About Us</button></li>
               <li><button onClick={() => navigateTo('contact')} className="hover:text-white transition">Contact Us</button></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold uppercase tracking-wider mb-6">US Office & Warehouse</h4>
-            <address className="not-italic leading-relaxed">
-              1001 S. Main St. STE 600<br/>
-              Kalispell, MT 59901<br/>
-              United States
-            </address>
+            <h4 className="text-white font-bold uppercase tracking-wider mb-6">Policies</h4>
+            <ul className="space-y-3 cursor-pointer">
+              <li><button onClick={() => navigateTo('shipping')} className="hover:text-white transition">Shipping Policy</button></li>
+              <li><button onClick={() => navigateTo('returns')} className="hover:text-white transition">Return Policy</button></li>
+              <li><button onClick={() => navigateTo('privacy')} className="hover:text-white transition">Privacy Policy</button></li>
+              <li><button onClick={() => navigateTo('terms')} className="hover:text-white transition">Terms of Service</button></li>
+            </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold uppercase tracking-wider mb-6">Artist & Media Dept</h4>
-            <address className="not-italic leading-relaxed">
-              215 Nguyen Sinh Sac St<br/>
-              Da Nang City<br/>
-              Vietnam
-            </address>
+            <h4 className="text-white font-bold uppercase tracking-wider mb-6">Our Locations</h4>
+            <div className="space-y-4">
+              <div>
+                <p className="text-white text-xs font-semibold mb-1">US Office & Warehouse</p>
+                <address className="not-italic leading-relaxed text-sm">
+                  1001 S. Main St. STE 600<br/>
+                  Kalispell, MT 59901
+                </address>
+              </div>
+              <div>
+                <p className="text-white text-xs font-semibold mb-1">Artist & Media Dept</p>
+                <address className="not-italic leading-relaxed text-sm">
+                  215 Nguyen Sinh Sac St<br/>
+                  Da Nang City, Vietnam
+                </address>
+              </div>
+            </div>
           </div>
         </div>
 
